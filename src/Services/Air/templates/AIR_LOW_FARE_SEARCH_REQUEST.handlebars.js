@@ -12,7 +12,7 @@ module.exports = `
             xmlns:com="http://www.travelport.com/schema/common_v52_0"
             >
         {{else}}
-        <air:LowFareSearchReq
+        <air:LowFareSearchReq 
             AuthorizedBy="user" TraceId="{{requestId}}" TargetBranch="{{TargetBranch}}"
             ReturnUpsellFare="true"
             {{#if solutionResult}}
