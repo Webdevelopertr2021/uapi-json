@@ -5,7 +5,7 @@ module.exports = `
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         {{#if async}}
-        <air:LowFareSearchAsynchReq
+        <air:LowFareSearchAsynchReq 
             AuthorizedBy="user" TraceId="{{requestId}}" TargetBranch="{{TargetBranch}}"
             ReturnUpsellFare="true"
             xmlns:air="http://www.travelport.com/schema/air_v52_0"
